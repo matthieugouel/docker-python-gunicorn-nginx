@@ -3,6 +3,8 @@
 [![Build Status](https://travis-ci.org/MatthieuGouel/docker-python-gunicorn-nginx.svg?branch=master)](https://travis-ci.org/MatthieuGouel/docker-python-gunicorn-nginx)
 [![Docker Build Status](https://img.shields.io/docker/build/matthieugouel/python-gunicorn-nginx.svg)](https://hub.docker.com/r/matthieugouel/python-gunicorn-nginx)
 [![Docker Automated build](https://img.shields.io/docker/automated/matthieugouel/python-gunicorn-nginx.svg)](https://github.com/MatthieuGouel/docker-python-gunicorn-nginx)
+[![license](https://img.shields.io/github/license/MatthieuGouel/docker-python-gunicorn-nginx.svg)](https://github.com/MatthieuGouel/docker-python-gunicorn-nginx/blob/master/LICENSE)
+
 
 This image contains Nginx and Gunicorn on top of Python3 docker image.
 These two software are managed with Supervisor.
