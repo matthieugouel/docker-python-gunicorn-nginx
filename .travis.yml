@@ -1,0 +1,20 @@
+sudo: required
+
+language: bash
+services: docker
+
+branches:
+  only:
+    - "master"
+
+before_script:
+    - image="python-gunicorn-nginx:latest"
+
+script:
+    - docker build -t ${image} .
+    - docker run -d -p 127.0.0.1:8000:80 ${image}
+    - sleep 3
+    - curl -v 127.0.0.1:8000
+
+after_script:
+  - docker images
